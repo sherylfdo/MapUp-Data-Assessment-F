@@ -13,7 +13,8 @@ def generate_car_matrix(df)->pd.DataFrame:
                           where 'id_1' and 'id_2' are used as indices and columns respectively.
     """
     # Write your logic here
-
+    df=pd.read_csv("dataset-1.csv")
+    
     return df
 
 
