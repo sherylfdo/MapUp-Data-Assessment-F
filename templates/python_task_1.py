@@ -14,7 +14,7 @@ def generate_car_matrix(df)->pd.DataFrame:
     """
     # Write your logic here
     df=pd.read_csv("dataset-1.csv")
-    
+    df=df.pivot_table(column='id_1', index='id_2', values='car', fill_value=0)
     return df
 
 
